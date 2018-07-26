@@ -339,25 +339,23 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2018/07/23/暑期杂记/" >
+        <a class="abstract-title" href = "/2018/07/26/P2661-信息传递/" >
             
-                <span>暑期杂记</span>
+                <span>[P2661]信息传递</span>
         </a>
         <div class="abstract-content">
-            前段时间都比较忙(浪）。晚上失眠，补上这篇蒟蒻的心路历程。
-高考Day1：语文大概留了一个小时写作文，心想不虚，字写好看一点。刷刷刷写到11：20还有两百多字，顿时就慌了，不顾扭曲的字体五分钟写完。剩下五分钟……我在盯着答题卡发呆Orz。数学四十分钟不到做完选择填空。心想稳了，结果卡在了第一道解答题(大水题)上。解析几何第二小问直接放弃，统计题看了半个小时只会写第一步。出考场知道凉了的我强行镇定，在回学校的大巴上对了下上午的语文答案——作文跑题了。
-Day2:理综曾经考过168的我面对这样一道难(考)易(的)适(全)中(会)的卷子露出了会心的微笑，走出考场时完全扫除了前一天数学失败的阴霾...
+            这题的题意是将每个人及其信息传递对象抽象成一个有向图，最大传递次数即为最小环的长度。我们可以先用拓扑排序找环，显然的，不断拓扑后环上的每一个点的入度均不为零。因此我们可以用DFS求环的长度，访问过的点打上标记，不再求已经访问过的环的长度，以此降低时间复杂度。12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576#include &lt;iostream&gt;...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/07/23</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/07/26</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "杂记">杂记</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "题解">题解</a>
     
 </div>
             
