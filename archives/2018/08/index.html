@@ -339,23 +339,23 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2018/07/26/P2661-信息传递/" >
+        <a class="abstract-title" href = "/2018/08/16/堆/" >
             
-                <span>[P2661]信息传递</span>
+                <span>堆</span>
         </a>
         <div class="abstract-content">
-            <p>这题的题意是将每个人及其信息传递对象抽象成一个有向图，最大传递次数即为最小环的长度。我们可以先用拓扑排序找环，显然的，不断拓扑后环上的每一个点的入度均不为零。因此我们可以用DFS求环的长度，访问过的点打上标记，不再求已经访问过的环的长度，以此降低时间复杂度。
+            这里是用一个结构体将堆封装起来，达到类似STL的效果。这是一个小根堆，即保证堆顶的值最小，相对较大的值尽量向下沉。插入一个值即将其放在叶子结点上，不断上浮，直至比其子结点小、比其父节点大。弹出堆顶值即将堆底值与其交换，不断下沉，直至比其子结点小、比其父节点大。1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374#include &lt;iostream&gt;#in...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/07/26</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/08/16</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "题解">题解</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "算法">算法</a>
     
 </div>
             
